@@ -145,6 +145,7 @@ body {
     }
   }
   
+
   /*--------------------------------------------------------------
   # Navigation Menu
   --------------------------------------------------------------*/
@@ -191,37 +192,6 @@ body {
     transform: scale(1.12);
   }
   
-  /* Mobile Navigation */
-  .mobile-nav-toggle {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    z-index: 9998;
-    border: 0;
-    font-size: 24px;
-    transition: all 0.4s;
-    outline: none !important;
-    background-color: #149ddd;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 0;
-    border-radius: 50px;
-    cursor: pointer;
-  }
-  
-  .mobile-nav-active {
-    overflow: hidden;
-  }
-  
-  .mobile-nav-active #header {
-    left: 0;
-  }
-  
-
   
   /*--------------------------------------------------------------
   # Hero Section
@@ -247,12 +217,9 @@ body {
     font-weight: 700;
     line-height: 60px;
     color:whitesmoke;
-    padding: 25rem;
-    transition: all 0.2s ease;
-  }
-
-  .h1:hover{
-    transform: scale(1.12);
+    padding-left: 19rem;
+    padding-top: 25rem;
+    transition: all 0.3s ease;
   }
  
   @media (min-width: 1024px) {
@@ -263,8 +230,10 @@ body {
   
   @media (max-width: 768px) {
     #hero h1 {
-      font-size: 28px;
-      line-height: 36px;
+      font-size: 45px;
+      line-height: 38px;
+      padding-top: 25rem;
+      padding-left: 2rem;
     }
     #hero h2 {
       font-size: 18px;
@@ -483,6 +452,8 @@ body {
 
 .services .title a {
   color: #343a40;
+  font-weight: 700;
+  font-size: 24px;  
 }
 
 .services .title a:hover {
@@ -492,20 +463,30 @@ body {
 .services .description {
   margin-left: 80px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .services .row{
-  margin: 0px 12px;
+  margin: 5px 12px;
   display: flex;
   flex-wrap: wrap;
 }
 .services .row .col-lg-4.col-md-6.icon-box {
-  padding: 0px 12px;
-  margin: 0px 0px 20px;
-  width: 33.3333333333%;
+  padding: 2rem;
+  width: 50%;
 }
 
+@media (max-width: 768px) {
+  .services .row{
+    margin: 5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .services .row .col-lg-4.col-md-6.icon-box {
+    padding: 2rem;
+    width: 100%;
+  }
+}  
 
   /*--------------------------------------------------------------
   # Contact
@@ -596,4 +577,20 @@ body {
       padding-right: 20px 15px;
     }
   }
-  
+
+  @media (max-width: 768px) {
+    
+    #footer .social-links{
+      display: flex;
+      font-size: 25px;
+      line-height: 1;
+      padding-bottom: 4.5rem;
+      width: 36px;
+      height: 36px;      
+      cursor: pointer;
+    }
+    #footer .social-links a{
+      padding: 2rem;  
+      color: whitesmoke; 
+    }
+  }   
